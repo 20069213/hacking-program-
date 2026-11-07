@@ -1,0 +1,5 @@
+# افتح التيرمنال/CMD في فولدر المشروع واكتب الأمر ده:
+keytool -genkeypair -v -keystore my-release-key.keystore -alias shadow_key -keyalg RSA -keysize 2048 -validity 10000
+
+# بعد ما تخلص التوليد، عشان توقع الـ APK من غير أندرويد ستوديو:
+apksigner sign --ks my-release-key.keystore --out app-release-signed.apk app/build/outputs/apk/release/app-release-unsigned.apk
