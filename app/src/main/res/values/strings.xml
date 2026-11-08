@@ -1,5 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 💀ABDO SAAD💀 -->
 <resources>
-    <string name="app_name">System Update</string>
-    <string name="accessibility_desc">System accessibility service</string>
+    <string name="app_name">💀ABDO SAAD💀</string>
+    <string name="app_subtitle">cybersecurity suite</string>
+    <string name="language_label">🌐 Language: %1$s</string>
+    <string name="choose_language">Choose language</string>
+
+    <!-- Main menu -->
+    <string name="card_defense_title">🛡 Self-Defense</string>
+    <string name="card_defense_desc">audit · phishing · breach · perms</string>
+    <string name="card_terminal_title">Terminal</string>
+    <string name="card_terminal_desc">real shell — root or app-uid</string>
+    <string name="card_scanner_title">Network Scanner</string>
+    <string name="card_scanner_desc">port scan + banner + services</string>
+    <string name="card_toolkit_title">Toolkit</string>
+    <string name="card_toolkit_desc">hash · base64 · url · hex · jwt</string>
+    <string name="card_recon_title">Recon</string>
+    <string name="card_recon_desc">dns · headers · ip info</string>
+    <string name="card_dns_title">DNS Query</string>
+    <string name="card_dns_desc">A · AAAA · MX · TXT · NS</string>
+    <string name="card_tls_title">TLS Inspector</string>
+    <string name="card_tls_desc">chain · SANs · fingerprints</string>
+    <string name="card_lan_title">LAN Sweep</string>
+    <string name="card_lan_desc">discover hosts on a CIDR</string>
+    <string name="card_http_title">Raw HTTP</string>
+    <string name="card_http_desc">method · headers · body</string>
+    <string name="card_hashid_title">Hash Identifier</string>
+    <string name="card_hashid_desc">md5 · sha · bcrypt · argon2</string>
+    <string name="card_coder_title">MultiCoder</string>
+    <string name="card_coder_desc">base32/58 · morse · ascii85</string>
+    <string name="card_wifi_title">WiFi Analyzer</string>
+    <string name="card_wifi_desc">scan · signal · security</string>
+    <string name="card_subnet_title">Subnet Calculator</string>
+    <string name="card_subnet_desc">CIDR → netmask · hosts</string>
+    <string name="card_password_title">Password Forge</string>
+    <string name="card_password_desc">secure generator + entropy</string>
+    <string name="card_filehash_title">File Hasher</string>
+    <string name="card_filehash_desc">MD5 · SHA-1 · SHA-256 · SHA-512</string>
+    <string name="card_stego_title">Steganography</string>
+    <string name="card_stego_desc">hide text in PNG</string>
+    <string name="card_crypto_title">Crypto Lab</string>
+    <string name="card_crypto_desc">AES-GCM · PBKDF2</string>
+    <string name="card_darkweb_title">Dark Web</string>
+    <string name="card_darkweb_desc">tor · needs Orbot</string>
+    <string name="card_learning_title">Learn Code</string>
+    <string name="card_learning_desc">8 languages · full lessons</string>
+    <string name="card_exam_title">Exam</string>
+    <string name="card_exam_desc">cybersec quiz</string>
+    <string name="card_scary_title">Scary 💀</string>
+    <string name="card_scary_desc">creepy · jumpscare · fake-hack</string>
+
+    <!-- Buttons -->
+    <string name="btn_scan">SCAN</string>
+    <string name="btn_stop">STOP</string>
+    <string name="btn_start">START</string>
+    <string name="btn_run">RUN</string>
+    <string name="btn_clear">CLEAR</string>
+    <string name="btn_calc">CALCULATE</string>
+    <string name="btn_generate">GENERATE</string>
+    <string name="btn_pick_file">PICK FILE</string>
+    <string name="btn_embed">EMBED</string>
+    <string name="btn_extract">EXTRACT</string>
+    <string name="btn_encrypt">ENCRYPT</string>
+    <string name="btn_decrypt">DECRYPT</string>
+    <string name="btn_send">SEND</string>
+    <string name="btn_query">QUERY</string>
+    <string name="btn_inspect">INSPECT</string>
+    <string name="btn_sweep">SWEEP</string>
+    <string name="btn_identify">IDENTIFY</string>
+    <string name="btn_audit">AUDIT</string>
+    <string name="btn_phish">PHISHING</string>
+    <string name="btn_breach">BREACH</string>
+    <string name="btn_apps">APPS</string>
+
+    <!-- Toast/hints -->
+    <string name="toast_root_shell">root shell</string>
+    <string name="toast_appuid_shell">app-uid shell</string>
+    <string name="hint_target">Target (IP/host)</string>
+    <string name="hint_start_port">start</string>
+    <string name="hint_end_port">end</string>
+    <string name="hint_input">input</string>
+    <string name="hint_hostname">hostname</string>
+    <string name="hint_cidr">e.g. 192.168.1.0/24</string>
+    <string name="hint_password">password</string>
+
+    <!-- Self-Defense -->
+    <string name="sd_title">💀ABDO SAAD💀 — Self-Defense</string>
+    <string name="sd_posture">═══ posture audit ═══</string>
+    <string name="sd_checklist">═══ harden yourself — checklist ═══</string>
+
+    <!-- Terminal -->
+    <string name="term_ready">terminal ready</string>
+    <string name="term_help">type \'help\' for shortcuts</string>
 </resources>
