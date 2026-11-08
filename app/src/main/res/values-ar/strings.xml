@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 💀ABDO SAAD💀 -->
+<resources>
+    <string name="app_name">💀ABDO SAAD💀</string>
+    <string name="app_subtitle">حزمة الأمن السيبراني</string>
+    <string name="language_label">🌐 اللغة: %1$s</string>
+    <string name="choose_language">اختر اللغة</string>
+
+    <!-- Main menu -->
+    <string name="card_defense_title">🛡 الدفاع الذاتي</string>
+    <string name="card_defense_desc">فحص · تصيّد · اختراق · صلاحيات</string>
+    <string name="card_terminal_title">الترمنال</string>
+    <string name="card_terminal_desc">shell حقيقي — root أو app-uid</string>
+    <string name="card_scanner_title">فاحص الشبكة</string>
+    <string name="card_scanner_desc">فحص بورتات + خدمات</string>
+    <string name="card_toolkit_title">صندوق الأدوات</string>
+    <string name="card_toolkit_desc">hash · base64 · url · hex · jwt</string>
+    <string name="card_recon_title">الاستطلاع</string>
+    <string name="card_recon_desc">dns · headers · ip info</string>
+    <string name="card_dns_title">استعلام DNS</string>
+    <string name="card_dns_desc">A · AAAA · MX · TXT · NS</string>
+    <string name="card_tls_title">فاحص TLS</string>
+    <string name="card_tls_desc">السلسلة · SANs · بصمات</string>
+    <string name="card_lan_title">مسح الشبكة المحلية</string>
+    <string name="card_lan_desc">اكتشاف الأجهزة الحية</string>
+    <string name="card_http_title">HTTP خام</string>
+    <string name="card_http_desc">method · headers · body</string>
+    <string name="card_hashid_title">معرّف البصمات</string>
+    <string name="card_hashid_desc">md5 · sha · bcrypt · argon2</string>
+    <string name="card_coder_title">متحول النصوص</string>
+    <string name="card_coder_desc">base32/58 · morse · ascii85</string>
+    <string name="card_wifi_title">محلل الواي فاي</string>
+    <string name="card_wifi_desc">مسح · إشارة · تشفير</string>
+    <string name="card_subnet_title">حاسبة الشبكة الفرعية</string>
+    <string name="card_subnet_desc">CIDR → netmask · hosts</string>
+    <string name="card_password_title">مولّد كلمات المرور</string>
+    <string name="card_password_desc">توليد آمن + entropy</string>
+    <string name="card_filehash_title">بصمة الملف</string>
+    <string name="card_filehash_desc">MD5 · SHA-1 · SHA-256 · SHA-512</string>
+    <string name="card_stego_title">الإخفاء داخل الصور</string>
+    <string name="card_stego_desc">إخفاء نص في PNG</string>
+    <string name="card_crypto_title">مختبر التشفير</string>
+    <string name="card_crypto_desc">AES-GCM · PBKDF2</string>
+    <string name="card_darkweb_title">الويب المظلم</string>
+    <string name="card_darkweb_desc">tor · يحتاج Orbot</string>
+    <string name="card_learning_title">تعلّم البرمجة</string>
+    <string name="card_learning_desc">8 لغات · دروس كاملة</string>
+    <string name="card_exam_title">الامتحان</string>
+    <string name="card_exam_desc">اختبار أمن سيبراني</string>
+    <string name="card_scary_title">مرعب 💀</string>
+    <string name="card_scary_desc">رعب · فزعة · اختراق وهمي</string>
+
+    <!-- Buttons -->
+    <string name="btn_scan">فحص</string>
+    <string name="btn_stop">إيقاف</string>
+    <string name="btn_start">بدء</string>
+    <string name="btn_run">تشغيل</string>
+    <string name="btn_clear">مسح</string>
+    <string name="btn_calc">احسب</string>
+    <string name="btn_generate">توليد</string>
+    <string name="btn_pick_file">اختر ملف</string>
+    <string name="btn_embed">إخفاء</string>
+    <string name="btn_extract">استخراج</string>
+    <string name="btn_encrypt">تشفير</string>
+    <string name="btn_decrypt">فك التشفير</string>
+    <string name="btn_send">إرسال</string>
+    <string name="btn_query">استعلام</string>
+    <string name="btn_inspect">فحص</string>
+    <string name="btn_sweep">مسح</string>
+    <string name="btn_identify">تعرّف</string>
+    <string name="btn_audit">فحص</string>
+    <string name="btn_phish">تصيّد</string>
+    <string name="btn_breach">اختراق</string>
+    <string name="btn_apps">تطبيقات</string>
+
+    <!-- Toast/hints -->
+    <string name="toast_root_shell">shell بصلاحيات root</string>
+    <string name="toast_appuid_shell">shell عادي (app-uid)</string>
+    <string name="hint_target">الهدف (IP أو host)</string>
+    <string name="hint_start_port">بداية</string>
+    <string name="hint_end_port">نهاية</string>
+    <string name="hint_input">نص الإدخال</string>
+    <string name="hint_hostname">اسم المضيف</string>
+    <string name="hint_cidr">مثال: 192.168.1.0/24</string>
+    <string name="hint_password">كلمة المرور</string>
+
+    <!-- Self-Defense -->
+    <string name="sd_title">💀ABDO SAAD💀 — الدفاع الذاتي</string>
+    <string name="sd_posture">═══ فحص الجهاز ═══</string>
+    <string name="sd_checklist">═══ قائمة التحصين ═══</string>
+
+    <!-- Terminal -->
+    <string name="term_ready">الترمنال جاهز</string>
+    <string name="term_help">اكتب help للأوامر</string>
+</resources>
