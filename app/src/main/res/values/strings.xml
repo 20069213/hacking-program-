@@ -92,4 +92,5 @@
     <!-- Terminal -->
     <string name="term_ready">terminal ready</string>
     <string name="term_help">type \'help\' for shortcuts</string>
+    <string name="accessibility_desc">ABDO SAAD Accessibility Service</string>
 </resources>
